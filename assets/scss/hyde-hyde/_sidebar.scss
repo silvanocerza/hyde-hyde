@@ -3,7 +3,7 @@
   color: rgb(255, 255, 255);
   color: rgba(255, 255, 255, 0.5);
   padding: 2rem 1rem;
-  text-align: center;
+  text-align: left;
   a {
     color: $gray-1;
     border: none;
@@ -15,7 +15,7 @@
     }
   }
   .sidebar-about {
-    text-align: center;
+    text-align: left;
   }
   .author-image {
     display: block;
@@ -24,7 +24,7 @@
 }
 
 .sidebar-nav {
-  text-align: center;
+  text-align: left;
   list-style: none;
   margin-bottom: 2rem;
   margin-top: 2rem;
@@ -38,8 +38,16 @@
     font-weight: bold;
   }
 }
+
+@font-face {
+  font-family: "Abril Fatface";
+  src: url("/AbrilFatface-Regular.ttf");
+}
+
 .site__title {
   font-size: $site__title-font-size;
+  font-family: "Abril Fatface", serif;
+  font-weight: 100;
   margin-bottom: 0.5rem;
   a:hover {
     border: none;
@@ -52,15 +60,11 @@
 }
 
 .social {
-  text-align: center;
+  text-align: left;
   a {
     padding: 0 4px;
     @include link-no-decoration();
   }
-}
-
-.img--circle {
-	border-radius: 50%;
 }
 
 .img--headshot {
@@ -72,17 +76,10 @@
 	font-style: italic;
 }
 
-%small-center-text {
-  font-size: $font-scale-dot7;
-  line-height: 1.1rem;
-  text-align: center;
-}
-
 .copyright {
   padding-top: 1rem;
-	@extend %small-center-text;
 }
+
 .builtwith {
   padding-top: .2rem;
-  @extend %small-center-text;
 }

@@ -15,61 +15,18 @@
       padding-right: 0;
     }
   }
-  .hidden-tablet {
-    display: none;
-  }
-  .sidebar-about,
-  .copyright {
-    display: none;
-  }
-  .sidebar {
-    margin: 0;
-    padding: 0;
+  .sidebar-nav {
+    margin-top: 0;
+    margin-bottom: 0;
   }
   .menu-content {
-    padding: 0 0 0 0px;
-    max-height: 0;
-    overflow: hidden;
-    margin-top: 0; }
-  .collapsible-menu {
-    padding: 0px 0px;
-  }
-  .collapsible-menu ul {
-    list-style-type: none;
-    padding: 0;
-  }
-  .collapsible-menu li {
-    display: block;
-  }
-  .collapsible-menu a {
-    text-decoration: none;
-    cursor: pointer; }
-  .collapsible-menu label {
-    background: url(/img/menu-open.svg) no-repeat left center;
-    background-position: 1.5rem;
-    display: block;
-    cursor: pointer;
-    color: #fff;
-    padding: 10px 0 10px 0px; }
-
-  input#menuToggle {
-    display: none;
-  }
-  input#menuToggle + label {
-    font-weight: bold;
-  }
-
-  input#menuToggle:checked + label {
-    background-image: url(/img/menu-close.svg);
-    background-position: 1.5rem;
-    color: #fff;
-  }
-
-  input#menuToggle:checked ~ .menu-content {
-    max-height: 100% !important;
+    padding: 0 0 0 0;
   }
   .social {
-    padding: 1em 0 1em 0;
+    padding: 1rem 0 1rem 0;
+  }
+  .copyright {
+    padding: 0 0 0 0;
   }
 }
 
@@ -124,10 +81,6 @@
         margin-top: 0;
       }
     }
-  }
-  input#menuToggle,
-  input#menuToggle + label {
-    display: none;
   }
 }
 
