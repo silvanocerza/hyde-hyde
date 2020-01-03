@@ -127,9 +127,12 @@ a {
 	&.tag {
 		@include link-no-decoration();
 	}
-	&.read-more-symbol {
-		text-decoration: none;
-		@include link-no-decoration();
+	&.read-more-link {
+		text-decoration: underline;
+		font-weight: bold;
+		&:hover {
+			@include link-no-decoration();
+		}
 	}
 }
 
