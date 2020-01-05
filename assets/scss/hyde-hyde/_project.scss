@@ -21,6 +21,12 @@
   margin-top: 1.765rem;
   letter-spacing: 1px;
   font-size: $project__title-font-size;
+  a {
+    text-decoration: underline;
+    &:hover {
+      @include link-no-decoration();
+    }
+  }
 }
 
 %subtitle {
