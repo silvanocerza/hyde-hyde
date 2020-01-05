@@ -17,19 +17,15 @@
         {{ with .Site.Params.authorimage }}
         {{ $strippedSlash := ($.Site.Params.authorimage | replaceRE "^(/)+(.*)" "$2") }}
         {{ $authorImage := (printf "%s%s" $.Site.BaseURL $strippedSlash) }}
-        <div class="author-image">
           <a href="{{ .Site.BaseURL }}">
             <img src="{{$authorImage}}" alt="Author Image" class="img--headshot">
           </a>
-        </div>
         {{ end }}
       {{ end }}
       {{ with .Site.Params.social.gravatar}}
-        <div class="author-image">
-          <a href="{{ $.Site.BaseURL }}">
-            <img src="https://www.gravatar.com/avatar/{{md5 .}}?s=240&d=mp" class="img--circle img--headshot" alt="gravatar">
-          </a>
-        </div>
+        <a href="{{ $.Site.BaseURL }}">
+          <img src="https://www.gravatar.com/avatar/{{md5 .}}?s=240&d=mp" class="img--circle img--headshot" alt="gravatar">
+        </a>
       {{ end }}
       <p class="site__description">
         {{ with .Site.Params.description }} {{.}} {{end}}
