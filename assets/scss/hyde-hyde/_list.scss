@@ -6,6 +6,13 @@
 
 .post-list__item {
 	margin-bottom: 3em;
+	p a {
+		text-decoration: underline;
+		font-weight: bold;
+		&:hover {
+			@include link-no-decoration();
+		}
+	}
 }
 
 .item__title--big {

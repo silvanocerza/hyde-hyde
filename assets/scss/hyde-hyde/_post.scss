@@ -25,14 +25,24 @@
   background-image:         linear-gradient(to right, $gradient-color-1, $gradient-color-2); /* Standard syntax; must be last */
   color:transparent;
   -webkit-background-clip: text;
-  background-clip: text; 
+  background-clip: text;
  }
- 
+
 .post__subtitle {
   display: block;
   font-size: $post__subtitle-font-size;
   font-style: italic;
   padding: 0 0 1rem 0;
+}
+
+.post {
+  a {
+    text-decoration: underline;
+    font-weight: bold;
+    &:hover {
+      @include link-no-decoration();
+    }
+  }
 }
 
 #references {
